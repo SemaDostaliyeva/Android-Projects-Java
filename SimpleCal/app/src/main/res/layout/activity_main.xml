@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextbirincisayi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+        android:hint="1. Reqem daxil edin"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextikincisayi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="2. Reqem daxil edin"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextbirincisayi" />
+
+    <Button
+        android:id="@+id/btncix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:background="#DFCCCC"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnvur"
+        app:layout_constraintEnd_toStartOf="@+id/btnvur"
+        app:layout_constraintStart_toEndOf="@+id/btntop" />
+
+    <Button
+        android:id="@+id/btnbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:background="#DFCCCC"
+        android:text="/"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnvur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnvur" />
+
+    <Button
+        android:id="@+id/btnvur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:background="#DFCCCC"
+        android:text="*"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnbol"
+        app:layout_constraintStart_toEndOf="@+id/btncix"
+        app:layout_constraintTop_toBottomOf="@+id/editTextikincisayi" />
+
+    <Button
+        android:id="@+id/btntop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="7dp"
+        android:background="#DFCCCC"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btncix"
+        app:layout_constraintEnd_toStartOf="@+id/btncix"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Cavanid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="62dp"
+        android:text="Cavab"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnvur"
+        app:layout_constraintStart_toStartOf="@+id/btncix"
+        app:layout_constraintTop_toBottomOf="@+id/btnvur" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

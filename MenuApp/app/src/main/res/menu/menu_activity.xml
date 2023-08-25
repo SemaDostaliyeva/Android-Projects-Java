@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/phone"
+        android:icon="@drawable/ic_phone"
+        android:title="Phone"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/camera"
+        android:icon="@drawable/ic_camera"
+        android:title="Camera"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/ic_notifications"
+        android:title="Notifications"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/support"
+        android:icon="@drawable/ic_support"
+        android:title="Support"
+        app:showAsAction="never" />
+
+</menu>

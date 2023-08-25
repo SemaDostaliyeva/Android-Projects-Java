@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TextViewStart"
+        android:layout_width="219dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/start_now"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/MainText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/MainText"
+        android:layout_width="381dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="137dp"
+        android:text="@string/click_on_the_big_number_and_get_the_point"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="32sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewStart" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="103dp"
+        android:background="#2196F3"
+        android:onClick="onClickLeft"
+        android:text="@string/_0"
+        android:textColor="#880E0E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPoint"
+        app:layout_constraintEnd_toStartOf="@+id/btn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainText" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="40dp"
+        android:background="#2196F3"
+        android:onClick="onClickRight"
+        android:text="@string/_02"
+        android:textColor="#880E4F"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn1" />
+
+    <TextView
+        android:id="@+id/textViewPoint"
+        android:layout_width="191dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="111dp"
+        android:text="@string/points_0"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
